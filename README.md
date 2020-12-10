@@ -11,6 +11,7 @@ Zhengyi Yang
 Nengneng Yu
 
 c. Link to project demo video
+https://drive.google.com/file/d/1k0zd7tGIaJYuk6LLiVsHpkQum4EXyPa8/view?usp=sharing
 
 d. Overview of the project / Explanation of all functionalities
 The project is a VGA pong game. The green block is moving in the screen, and will bounce if it goes to the upper/left/right boundary of the screen. If it goes to the lower boundary, the game ends. The user can move the red bar at the bottom horizontally to catch the green block to prevent it from going to the lower boundary. The red block is controlled by using keyboard, key A and D. 
