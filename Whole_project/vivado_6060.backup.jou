@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec  9 14:49:28 2020
+# Process ID: 6060
+# Current directory: C:/Users/ynn1999/Lab4433
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7272 C:\Users\ynn1999\Lab4433\Lab3333.xpr
+# Log file: C:/Users/ynn1999/Lab4433/vivado.log
+# Journal file: C:/Users/ynn1999/Lab4433\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ynn1999/Lab4433/Lab3333.xpr
+launch_simulation
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Combine [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ynn1999/Lab4433/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ynn1999/Lab4433/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ynn1999/Lab4433/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+close [ open C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/top.v w ]
+add_files C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/top.v
+add_files -norecurse -scan_for_includes {C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/keyboard-driver.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/alarm_power.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/clock_divider.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/clock1.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/Start.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/v_counter.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/vga_222.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/alarm.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/top.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/led.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/bin_dec1.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/alarm_improve.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/Gst.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/GenerSequen.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/difficulty.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/h_counter.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/displaydiff.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/counter_n.v C:/Users/ynn1999/Lab4433/Lab3333.srcs/sources_1/new/CLK1HZ.v}
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+synth_design -rtl -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ynn1999/Lab4433/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ynn1999/Lab4433/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+close_hw
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/ynn1999/Lab4433/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/ynn1999/Lab4433/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

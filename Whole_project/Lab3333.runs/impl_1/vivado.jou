@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec  9 20:14:41 2020
+# Process ID: 8636
+# Current directory: C:/Users/ynn1999/FJTPDS/Lab3333.runs/impl_1
+# Command line: vivado.exe -log Combine.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Combine.tcl -notrace
+# Log file: C:/Users/ynn1999/FJTPDS/Lab3333.runs/impl_1/Combine.vdi
+# Journal file: C:/Users/ynn1999/FJTPDS/Lab3333.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Combine.tcl -notrace

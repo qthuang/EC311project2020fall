@@ -1,0 +1,32 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Dec  9 17:42:03 2020
+# Process ID: 6288
+# Current directory: X:/Lab4433 new/Lab4433
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9156 X:\Lab4433 new\Lab4433\Lab3333.xpr
+# Log file: X:/Lab4433 new/Lab4433/vivado.log
+# Journal file: X:/Lab4433 new/Lab4433\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {X:/Lab4433 new/Lab4433/Lab3333.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:09 . Memory (MB): peak = 827.945 ; gain = 175.629
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory X:/Lab4433 new/Lab4433/Lab3333.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed Dec  9 17:42:48 2020] Launched synth_1...
+Run output will be captured here: X:/Lab4433 new/Lab4433/Lab3333.runs/synth_1/runme.log
+[Wed Dec  9 17:42:48 2020] Launched impl_1...
+Run output will be captured here: X:/Lab4433 new/Lab4433/Lab3333.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+

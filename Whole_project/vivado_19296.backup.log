@@ -1,0 +1,418 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Dec  8 15:34:07 2020
+# Process ID: 19296
+# Current directory: X:/Lab3333
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9048 X:\Lab3333\Lab3333.xpr
+# Log file: X:/Lab3333/vivado.log
+# Journal file: X:/Lab3333\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project X:/Lab3333/Lab3333.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 864.887 ; gain = 229.941
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 15:37:21 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF408A
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 15:41:33 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 15:41:33 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 15:43:47 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 15:43:47 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw
+close [ open X:/Lab3333/Lab3333.srcs/sources_1/new/keyboard-driver.v w ]
+add_files X:/Lab3333/Lab3333.srcs/sources_1/new/keyboard-driver.v
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/ALU.v] -no_script -reset -force -quiet
+remove_files  X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/ALU.v
+file delete -force X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/ALU.v
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset clk_wiz_0 X:/Lab3333/Lab3333.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
+INFO: [Project 1-386] Moving file 'X:/Lab3333/Lab3333.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci' from fileset 'clk_wiz_0' to fileset 'sources_1'.
+file delete -force X:/Lab3333/Lab3333.srcs/sources_1/ip/clk_wiz_0
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/dcd.v] -no_script -reset -force -quiet
+remove_files  X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/dcd.v
+file delete -force X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/dcd.v
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/csa.v] -no_script -reset -force -quiet
+remove_files  X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/csa.v
+file delete -force X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/csa.v
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_mul_b.v] -no_script -reset -force -quiet
+remove_files  X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_mul_b.v
+file delete -force X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_mul_b.v
+close [ open X:/Lab3333/Lab3333.srcs/sources_1/new/difficulty.v w ]
+add_files X:/Lab3333/Lab3333.srcs/sources_1/new/difficulty.v
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/rca.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/full_adder2.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_m_b.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/b_m_a.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/neg2pos.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_comp.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_m_1.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_p_1.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/b_comp.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/bin2bcd.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/mode2code.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/lab3_1/lab3_1.srcs/sources_1/new/comparator.v] -no_script -reset -force -quiet
+remove_files  {X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/rca.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/full_adder2.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_m_b.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/b_m_a.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/neg2pos.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_comp.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_m_1.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_p_1.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/b_comp.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/bin2bcd.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/mode2code.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/lab3_1/lab3_1.srcs/sources_1/new/comparator.v}
+file delete -force X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/rca.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/full_adder2.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_m_b.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/b_m_a.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/neg2pos.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_comp.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_m_1.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/a_p_1.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/b_comp.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/bin2bcd.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/mode2code.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/lab3_1/lab3_1.srcs/sources_1/new/comparator.v
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/full_adder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/half_adder2.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/hex_decoder.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/negate_a.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/negate_b.v] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/test_neg.v] -no_script -reset -force -quiet
+remove_files  {X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/full_adder.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/half_adder2.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/hex_decoder.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/negate_a.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/negate_b.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/test_neg.v}
+file delete -force X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/full_adder.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/half_adder2.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/hex_decoder.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/negate_a.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/negate_b.v X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/test_neg.v
+export_ip_user_files -of_objects  [get_files X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/newrca.v] -no_script -reset -force -quiet
+remove_files  X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/newrca.v
+file delete -force X:/Lab3333/Lab3333.srcs/sources_1/imports/Lab3/new-20201102T023832Z-001/new/newrca.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 17:07:29 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 17:07:29 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF408A
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 17:12:12 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 17:12:12 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 17:17:13 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 17:17:13 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 17:21:50 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 17:21:50 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 17:33:39 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 17:33:40 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 2346.121 ; gain = 255.543
+INFO: [Common 17-344] 'open_run' was cancelled
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 17:42:13 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 17:42:13 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+reset_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 17:43:51 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 17:43:51 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 17:54:54 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 17:54:54 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 18:28:44 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 18:28:44 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 18:37:28 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 18:37:28 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 18:42:31 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 18:42:31 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 18:44:59 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 18:44:59 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 18:53:50 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 18:53:50 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 19:01:58 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 19:01:58 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 19:05:22 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 19:05:22 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 19:13:18 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 19:13:19 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 19:24:20 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 19:24:20 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close [ open X:/Lab3333/Lab3333.srcs/sources_1/new/CLK1HZ.v w ]
+add_files X:/Lab3333/Lab3333.srcs/sources_1/new/CLK1HZ.v
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Tue Dec  8 19:56:35 2020] Launched synth_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/synth_1/runme.log
+[Tue Dec  8 19:56:35 2020] Launched impl_1...
+Run output will be captured here: X:/Lab3333/Lab3333.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292ABF408A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292ABF408A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {X:/Lab3333/Lab3333.runs/impl_1/Combine.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  8 20:05:53 2020...
